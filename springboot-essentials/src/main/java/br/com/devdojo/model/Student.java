@@ -1,14 +1,10 @@
 package br.com.devdojo.model;
 
-public class Student {
+import javax.persistence.Entity;
+
+@Entity
+public class Student extends AbstractEntity {
     private String name;
-
-    public Student(String name) {
-        this.name = name;
-    }
-
-    public Student() {
-    }
 
     public String getName() {
         return name;
