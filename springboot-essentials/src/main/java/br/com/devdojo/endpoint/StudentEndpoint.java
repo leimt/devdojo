@@ -7,6 +7,7 @@ import br.com.devdojo.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -37,8 +38,9 @@ public class StudentEndpoint {
     }
 
     @PostMapping
+    @Transactional  // checked exceptions devem ser incluídas explicitamente no @Transactional
     public ResponseEntity<?> save(@RequestBody Student student) {
-        return new ResponseEntity<>(studentDAO.save(student), HttpStatus.OK);
+        return new ResponseEntity<>(studentDAO.save(student), HttpStatus.CREATED);
     }
 
     @DeleteMapping(path = "/{id}")
