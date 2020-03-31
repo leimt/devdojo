@@ -1,7 +1,6 @@
 package br.com.devdojo.endpoint;
 
-import br.com.devdojo.awesome.error.CustomErrorType;
-import br.com.devdojo.awesome.error.ResourceNotFoundException;
+import br.com.devdojo.error.ResourceNotFoundException;
 import br.com.devdojo.model.Student;
 import br.com.devdojo.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
