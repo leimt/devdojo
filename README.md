@@ -1,3 +1,4 @@
+[En français](https://github.com/leimt/devdojo/blob/master/README.fr.md)
 # DevDojo
 Aulas do curso DevDojo
 
