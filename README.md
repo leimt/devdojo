@@ -17,3 +17,20 @@ Aulas do curso DevDojo
 
 # Aula #3
 - Configurar/ativar o Hot Swap no IntelliJ;
+
+# Aula #4
+- Criar um projeto SpringBoot pelo IntelliJ usando Spring Initializr ou pelo site https://start.spring.io/;
+- Executar o teste unitário padrão do SpringBoot;
+
+# Aula #5
+- Padrão REST: @RequestMapping - usar nome no plural;
+- Boa prática: usar o método GET sem usar um path;
+- Retornar o código de status;
+- Como retornar um erro/exceção customizado(a): CustomErrorType;
+- Usar a anotação @PathVariable;
+
+# Aula #6
+- Criar um endpoint para requisições POST;
+- Usar a anotação @RequestBody;
+- Instalar o software [Postman](https://www.postman.com/);
+- Usar o Postman para fazer uma requisição POST;
